@@ -30,30 +30,30 @@
         <header class="header_section">
             <div class="container">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="index.html"><img width="250" src="{% static '/Home_app/famm/images/logo.png'%}" alt="#" /></a>
+                    <h1>Farm 2 Home</h1>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
                   </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{% static '/Home_app/templates/index.html'%}">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="{% url 'landingPage' %}">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="{% static '/Home_app/about.html'%}">About</a></li>
-                                    <li><a href="{% static '/Home_app/testimonial.html'%}">Testimonial</a></li>
+                                    <li><a href="{% url 'aboutReq' %}">About</a></li>
+                                    <li><a href="{% url 'testimonialReq' %}">Testimonial</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{% static '/Home_app/templates/product.html'%}">Products</a>
+                                <a class="nav-link" href="{% url 'productReq'%}">Products</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="blog_list.html">Blog</a>
+                                <a class="nav-link" href="{% url 'blogReq' %}">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="{% url 'contactReq' %}">Contact</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
@@ -136,17 +136,17 @@
                                     <div class="detail-box">
                                         <h1>
                                             <span>
-                                    Sale 20% Off
-                                    </span>
-                                            <br> On Everything
+                                                Sale 20% Off
+                                            </span>
+                                            <br> On Fruits and Vegies
                                         </h1>
                                         <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                                            20 % off on all the Fruits and vegetables
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                    Shop Now
-                                    </a>
+                                                Shop Now
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -160,41 +160,18 @@
                                     <div class="detail-box">
                                         <h1>
                                             <span>
-                                    Sale 20% Off
-                                    </span>
-                                            <br> On Everything
+                                                Sale 40% Off
+                                            </span>
+                                            <br> On Dairy Products
                                         </h1>
                                         <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                                            Get all your needed dairy products at 40% discount,Offer will be limited for few days
+                                            Hurryy!!!
                                         </p>
                                         <div class="btn-box">
                                             <a href="" class="btn1">
-                                    Shop Now
-                                    </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container ">
-                            <div class="row">
-                                <div class="col-md-7 col-lg-6 ">
-                                    <div class="detail-box">
-                                        <h1>
-                                            <span>
-                                    Sale 20% Off
-                                    </span>
-                                            <br> On Everything
-                                        </h1>
-                                        <p>
-                                            Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                                        </p>
-                                        <div class="btn-box">
-                                            <a href="" class="btn1">
-                                    Shop Now
-                                    </a>
+                                                Shop Now
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -206,10 +183,10 @@
                     <ol class="carousel-indicators">
                         <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
                         <li data-target="#customCarousel1" data-slide-to="1"></li>
-                        <li data-target="#customCarousel1" data-slide-to="2"></li>
                     </ol>
                 </div>
             </div>
+</div>
         </section>
         <!-- end slider section -->
     </div>
@@ -313,10 +290,10 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Fast Delivery
+                                Same day delivery
                             </h5>
                             <p>
-                                variations of passages of Lorem Ipsum available
+                                All dairy products will be delivered in the same day of the order
                             </p>
                         </div>
                     </div>
@@ -431,7 +408,7 @@
                                 Free Shiping
                             </h5>
                             <p>
-                                variations of passages of Lorem Ipsum available
+                                Free shipping all over TamilNadu
                             </p>
                         </div>
                     </div>
@@ -452,7 +429,7 @@
                                 Best Quality
                             </h5>
                             <p>
-                                variations of passages of Lorem Ipsum available
+                                We deliver the best quality products directly from Farm to your home.
                             </p>
                         </div>
                     </div>
@@ -477,7 +454,7 @@
                             </h2>
                         </div>
                         <p style="margin-top: 20px;margin-bottom: 30px;">
-                            Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
+                            We are adding new products to the list everyday,One day will be having all the consumerables that a farmer can produce.
                         </p>
                         <a href="">
                      Shop Now
@@ -503,7 +480,7 @@
                         <div class="option_container">
                             <div class="options">
                                 <a href="" class="option1">
-                           Men's Shirt
+                           Add to Cart  
                            </a>
                                 <a href="" class="option2">
                            Buy Now
@@ -511,14 +488,14 @@
                             </div>
                         </div>
                         <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p1.png'%}" alt="">
+                            <img src="{% static '/Home_app/famm/images/Milk-img.jpg'%}" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Men's Shirt
+                                Cow's Milk
                             </h5>
                             <h6>
-                                $75
+                                Rs 50 / Litre
                             </h6>
                         </div>
                     </div>
@@ -536,14 +513,14 @@
                             </div>
                         </div>
                         <div class="img-box">
-                            <img src="{% static '/Home_app//images/p2.pngfamm'%}" alt="">
+                            <img src="{% static '/Home_app/famm/images/Butter.png'%}" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Men's Shirt
+                                Butter
                             </h5>
                             <h6>
-                                $80
+                                Rs 100 / Kg
                             </h6>
                         </div>
                     </div>
@@ -561,14 +538,14 @@
                             </div>
                         </div>
                         <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p3.png'%}" alt="">
+                            <img src="{% static '/Home_app/famm/images/cheese.png' %}" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Women's Dress
+                                Cheese
                             </h5>
                             <h6>
-                                $68
+                                Rs 150 / Kg
                             </h6>
                         </div>
                     </div>
@@ -586,14 +563,14 @@
                             </div>
                         </div>
                         <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p4.png'%}" alt="">
+                            <img src="{% static '/Home_app/famm/images/potato.jpg'%}" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Women's Dress
+                                Potato
                             </h5>
                             <h6>
-                                $70
+                                Rs 50 / Kg
                             </h6>
                         </div>
                     </div>
@@ -611,14 +588,14 @@
                             </div>
                         </div>
                         <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p5.png'%}" alt="">
+                            <img src="{% static '/Home_app/famm/images/onion.jpg'%}" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Women's Dress
+                                Onion
                             </h5>
                             <h6>
-                                $75
+                                Rs 40 / Kg
                             </h6>
                         </div>
                     </div>
@@ -636,171 +613,21 @@
                             </div>
                         </div>
                         <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p6.png'%}" alt="">
+                            <img src="{% static '/Home_app/famm/images/brinjal.jpg'%}" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Women's Dress
+                                Brinjal
                             </h5>
                             <h6>
-                                $58
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                                <a href="" class="option2">
-                           Buy Now
-                           </a>
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p7.png'%}" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Women's Dress
-                            </h5>
-                            <h6>
-                                $80
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                                <a href="" class="option2">
-                           Buy Now
-                           </a>
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p8.png'%}" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Men's Shirt
-                            </h5>
-                            <h6>
-                                $65
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                                <a href="" class="option2">
-                           Buy Now
-                           </a>
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p9.png'%}" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Men's Shirt
-                            </h5>
-                            <h6>
-                                $65
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                                <a href="" class="option2">
-                           Buy Now
-                           </a>
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p10.png'%}" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Men's Shirt
-                            </h5>
-                            <h6>
-                                $65
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                                <a href="" class="option2">
-                           Buy Now
-                           </a>
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p11.png'%}" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Men's Shirt
-                            </h5>
-                            <h6>
-                                $65
-                            </h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-4">
-                    <div class="box">
-                        <div class="option_container">
-                            <div class="options">
-                                <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                                <a href="" class="option2">
-                           Buy Now
-                           </a>
-                            </div>
-                        </div>
-                        <div class="img-box">
-                            <img src="{% static '/Home_app/famm/images/p12.png'%}" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Women's Dress
-                            </h5>
-                            <h6>
-                                $65
+                                Rs 35 / Kg
                             </h6>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="btn-box">
-                <a href="">
+                <a href="{% url 'productReq' %}">
                View All products
                </a>
             </div>
