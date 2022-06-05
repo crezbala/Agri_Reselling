@@ -6,6 +6,7 @@ def LandingPage(request):
     return render(request, "Home_app/index.html")
 
 def LoginPage(request):
+    #print(request.)
     print("login method print")
     return render(request, "Home_app/Login.html")
 

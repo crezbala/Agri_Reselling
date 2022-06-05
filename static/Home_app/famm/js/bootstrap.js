@@ -2199,10 +2199,10 @@
         if (transition) {
           var transitionDuration = Util.getTransitionDurationFromElement(this._element);
           $(this._element).one(Util.TRANSITION_END, function (event) {
-            return _this2._hideModal(event);
+            return _this2._hidemodal(event);
           }).emulateTransitionEnd(transitionDuration);
         } else {
-          this._hideModal();
+          this._hidemodal();
         }
       };
 
@@ -2332,7 +2332,7 @@
         }
       };
 
-      _proto._hideModal = function _hideModal() {
+      _proto._hidemodal = function _hidemodal() {
         var _this7 = this;
 
         this._element.style.display = 'none';
