@@ -1,13 +1,13 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Agri_Reselling",
     "\\Home_app",
-    "\\Home_app\\static",
-    "\\Home_app\\static\\Home_app",
     "\\Home_app\\static\\Home_app\\famm",
     "\\Home_app\\templates",
     "\\Home_app\\templates\\Home_app",
-    "\\static"
+    "\\users"
   ],
+  "SelectedNode": "\\Home_app\\templates\\blog_list.html",
   "PreviewInSolutionExplorer": false
 }

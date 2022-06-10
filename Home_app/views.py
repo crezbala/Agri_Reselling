@@ -79,5 +79,11 @@ def contactReq(request):
 def productReq(request):
     print("inside productReq")
     return render(request,"product.html")
+
+def paymentReq(request):
+    print("inside paymentReq")
+    return render(request,"payment.html")
+
+
     
 # Create your views here.
